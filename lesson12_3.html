@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://showcases.yalco.kr/html-css-tester.css">
+    <script defer src="https://showcases.yalco.kr/html-css-tester.js"></script>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+
+    <main>
+        <section class="result">
+    
+          <!-- 시작 -->
+          
+          <p>
+            <strong>text-decoration</strong> 속성은 밑줄, 취소선, 물결선 등으로 <br>
+            글을 꾸며주는데 사용됩니다. <br><br>
+            여러 꾸밈요소를 함께 사용할 수 있으며 <br>
+            선의 형태, 색, 굵기 등 디테일을 지정할 수도 있습니다. <br><br>
+            아래 링크에서 상세 내용과 구성 속성들을 확인하세요. <br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" target="_blank">👉 &nbsp;MDN 문서 보기</a>
+          </p>
+          <hr>
+          <p>
+            <strong>text-transform</strong> 속성은 알파벳의 대소문자 표시에 사용됩니다. <br><br>
+            HTML, CSS와 같이 대문자로 작성된 텍스트는 <em>capitalize</em>에 영향을 받지 않습니다.
+          </p>
+    
+          <!-- 끝 -->
+    
+        </section>
+        <section class="controls"></section>
+      </main>
+    
+      <script>
+        const controls = [
+          {
+            obj: {
+              name: 'p 요소들',
+              query: 'p'
+            },
+    
+            fields: [
+              {
+                type: 'select',
+                style: 'text-decoration',
+                opts: [
+                  'none',
+                  'underline',
+                  'line-through',
+                  'underline line-through overline',
+                  'wavy underline tomato',
+                  'dotted underline overline #008000 4px',
+                  'dashed line-through deeppink 2px'
+                ]
+              },
+              {
+                type: 'select',
+                style: 'text-transform',
+                opts: [
+                  'none',
+                  'capitalize',
+                  'uppercase',
+                  'lowercase'
+                ]
+              },
+            ]
+          }
+        ]
+      </script>
+      
+
+</body>
+</html>
